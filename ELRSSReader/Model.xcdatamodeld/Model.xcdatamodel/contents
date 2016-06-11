@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="ELFeedItem" representedClassName="ELFeedItem" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentsCount" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="commentsFeed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentsLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pubDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ELStreamItem" inverseName="feeds" inverseEntity="ELStreamItem" syncable="YES"/>
+    </entity>
+    <entity name="ELStreamItem" representedClassName="ELStreamItem" syncable="YES">
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="feeds" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ELFeedItem" inverseName="stream" inverseEntity="ELFeedItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ELFeedItem" positionX="0" positionY="0" width="128" height="210"/>
+        <element name="ELStreamItem" positionX="259" positionY="111" width="128" height="88"/>
+    </elements>
+</model>

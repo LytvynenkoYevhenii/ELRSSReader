@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F87C76DCED3652045EEF586 /* Pods_ELRSSReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA3B4AD3B7D32A4ED006843 /* Pods_ELRSSReader.framework */; };
+		A0136FAB1D0B411C00D18C0A /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = A0136FAA1D0B411C00D18C0A /* apple.png */; };
+		A02EA9901D0AE0880027F194 /* ELDetailFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02EA98F1D0AE0880027F194 /* ELDetailFeedViewController.m */; };
+		A043A2EE1D08928500C06180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A2ED1D08928500C06180 /* main.m */; };
+		A043A2F11D08928500C06180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A2F01D08928500C06180 /* AppDelegate.m */; };
+		A043A2F71D08928500C06180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A043A2F51D08928500C06180 /* Main.storyboard */; };
+		A043A2F91D08928500C06180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A043A2F81D08928500C06180 /* Assets.xcassets */; };
+		A043A2FC1D08928500C06180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A043A2FA1D08928500C06180 /* LaunchScreen.storyboard */; };
+		A043A3071D08928600C06180 /* ELRSSReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A3061D08928600C06180 /* ELRSSReaderTests.m */; };
+		A043A3121D08928600C06180 /* ELRSSReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A3111D08928600C06180 /* ELRSSReaderUITests.m */; };
+		A043A3221D08A11900C06180 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A043A3201D08A11900C06180 /* Model.xcdatamodeld */; };
+		A043A3371D08A53300C06180 /* ELServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A3361D08A53300C06180 /* ELServerManager.m */; };
+		A043A33F1D08E5B100C06180 /* ELStreamListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A33E1D08E5B100C06180 /* ELStreamListViewController.m */; };
+		A043A3421D08E6C000C06180 /* ELStreamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A3411D08E6C000C06180 /* ELStreamCell.m */; };
+		A043A3471D08ED5F00C06180 /* ELFeedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A3461D08ED5F00C06180 /* ELFeedListViewController.m */; };
+		A043A34A1D0983A900C06180 /* ELFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A3491D0983A900C06180 /* ELFeedCell.m */; };
+		A043A3651D098CEF00C06180 /* ELFeedItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A35E1D098CEF00C06180 /* ELFeedItem+CoreDataProperties.m */; };
+		A043A3661D098CEF00C06180 /* ELFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A3601D098CEF00C06180 /* ELFeedItem.m */; };
+		A043A3671D098CEF00C06180 /* ELStreamItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A3621D098CEF00C06180 /* ELStreamItem+CoreDataProperties.m */; };
+		A043A3681D098CEF00C06180 /* ELStreamItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A3641D098CEF00C06180 /* ELStreamItem.m */; };
+		A043A36E1D09CBB100C06180 /* ELStreamConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A043A36D1D09CBB100C06180 /* ELStreamConfigureViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A043A3031D08928600C06180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A043A2E11D08928500C06180 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A043A2E81D08928500C06180;
+			remoteInfo = ELRSSReader;
+		};
+		A043A30E1D08928600C06180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A043A2E11D08928500C06180 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A043A2E81D08928500C06180;
+			remoteInfo = ELRSSReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FA3B4AD3B7D32A4ED006843 /* Pods_ELRSSReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELRSSReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0136FAA1D0B411C00D18C0A /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		A02EA98E1D0AE0880027F194 /* ELDetailFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELDetailFeedViewController.h; sourceTree = "<group>"; };
+		A02EA98F1D0AE0880027F194 /* ELDetailFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELDetailFeedViewController.m; sourceTree = "<group>"; };
+		A043A2E91D08928500C06180 /* ELRSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELRSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A043A2ED1D08928500C06180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A043A2EF1D08928500C06180 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A043A2F01D08928500C06180 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A043A2F61D08928500C06180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A043A2F81D08928500C06180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A043A2FB1D08928500C06180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A043A2FD1D08928600C06180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A043A3021D08928600C06180 /* ELRSSReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELRSSReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A043A3061D08928600C06180 /* ELRSSReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELRSSReaderTests.m; sourceTree = "<group>"; };
+		A043A3081D08928600C06180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A043A30D1D08928600C06180 /* ELRSSReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELRSSReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A043A3111D08928600C06180 /* ELRSSReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELRSSReaderUITests.m; sourceTree = "<group>"; };
+		A043A3131D08928600C06180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A043A3211D08A11900C06180 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A043A3351D08A53300C06180 /* ELServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELServerManager.h; sourceTree = "<group>"; };
+		A043A3361D08A53300C06180 /* ELServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELServerManager.m; sourceTree = "<group>"; };
+		A043A33C1D08A80200C06180 /* ELRSSReader-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ELRSSReader-Prefix.pch"; sourceTree = "<group>"; };
+		A043A33D1D08E5B100C06180 /* ELStreamListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELStreamListViewController.h; sourceTree = "<group>"; };
+		A043A33E1D08E5B100C06180 /* ELStreamListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELStreamListViewController.m; sourceTree = "<group>"; };
+		A043A3401D08E6C000C06180 /* ELStreamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELStreamCell.h; sourceTree = "<group>"; };
+		A043A3411D08E6C000C06180 /* ELStreamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELStreamCell.m; sourceTree = "<group>"; };
+		A043A3451D08ED5F00C06180 /* ELFeedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELFeedListViewController.h; sourceTree = "<group>"; };
+		A043A3461D08ED5F00C06180 /* ELFeedListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFeedListViewController.m; sourceTree = "<group>"; };
+		A043A3481D0983A900C06180 /* ELFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELFeedCell.h; sourceTree = "<group>"; };
+		A043A3491D0983A900C06180 /* ELFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFeedCell.m; sourceTree = "<group>"; };
+		A043A35D1D098CEF00C06180 /* ELFeedItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ELFeedItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A043A35E1D098CEF00C06180 /* ELFeedItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ELFeedItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A043A35F1D098CEF00C06180 /* ELFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELFeedItem.h; sourceTree = "<group>"; };
+		A043A3601D098CEF00C06180 /* ELFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFeedItem.m; sourceTree = "<group>"; };
+		A043A3611D098CEF00C06180 /* ELStreamItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ELStreamItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A043A3621D098CEF00C06180 /* ELStreamItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ELStreamItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A043A3631D098CEF00C06180 /* ELStreamItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELStreamItem.h; sourceTree = "<group>"; };
+		A043A3641D098CEF00C06180 /* ELStreamItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELStreamItem.m; sourceTree = "<group>"; };
+		A043A36C1D09CBB100C06180 /* ELStreamConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELStreamConfigureViewController.h; sourceTree = "<group>"; };
+		A043A36D1D09CBB100C06180 /* ELStreamConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELStreamConfigureViewController.m; sourceTree = "<group>"; };
+		ECEB7BE38DBD107BAD3E2A83 /* Pods-ELRSSReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELRSSReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELRSSReader/Pods-ELRSSReader.release.xcconfig"; sourceTree = "<group>"; };
+		EFCAA9F69196FFA87C484703 /* Pods-ELRSSReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELRSSReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELRSSReader/Pods-ELRSSReader.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A043A2E61D08928500C06180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F87C76DCED3652045EEF586 /* Pods_ELRSSReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A043A2FF1D08928600C06180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A043A30A1D08928600C06180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0136FA91D0B411C00D18C0A /* Image files */ = {
+			isa = PBXGroup;
+			children = (
+				A0136FAA1D0B411C00D18C0A /* apple.png */,
+			);
+			path = "Image files";
+			sourceTree = SOURCE_ROOT;
+		};
+		A043A2E01D08928500C06180 = {
+			isa = PBXGroup;
+			children = (
+				A043A2EB1D08928500C06180 /* ELRSSReader */,
+				A043A3051D08928600C06180 /* ELRSSReaderTests */,
+				A043A3101D08928600C06180 /* ELRSSReaderUITests */,
+				A043A2EA1D08928500C06180 /* Products */,
+				A81ADCE8EDC15E39FD95253F /* Pods */,
+				E2D999DB7711BF6F7EBEF85E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A043A2EA1D08928500C06180 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A043A2E91D08928500C06180 /* ELRSSReader.app */,
+				A043A3021D08928600C06180 /* ELRSSReaderTests.xctest */,
+				A043A30D1D08928600C06180 /* ELRSSReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A043A2EB1D08928500C06180 /* ELRSSReader */ = {
+			isa = PBXGroup;
+			children = (
+				A0136FA91D0B411C00D18C0A /* Image files */,
+				A043A31F1D08A0D100C06180 /* Models */,
+				A043A3431D08E6CD00C06180 /* Prototype Cells */,
+				A043A3441D08E72100C06180 /* Controllers */,
+				A043A2EF1D08928500C06180 /* AppDelegate.h */,
+				A043A2F01D08928500C06180 /* AppDelegate.m */,
+				A043A3351D08A53300C06180 /* ELServerManager.h */,
+				A043A3361D08A53300C06180 /* ELServerManager.m */,
+				A043A2F51D08928500C06180 /* Main.storyboard */,
+				A043A2FA1D08928500C06180 /* LaunchScreen.storyboard */,
+				A043A2EC1D08928500C06180 /* Supporting Files */,
+			);
+			path = ELRSSReader;
+			sourceTree = "<group>";
+		};
+		A043A2EC1D08928500C06180 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A043A2F81D08928500C06180 /* Assets.xcassets */,
+				A043A2FD1D08928600C06180 /* Info.plist */,
+				A043A33C1D08A80200C06180 /* ELRSSReader-Prefix.pch */,
+				A043A2ED1D08928500C06180 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A043A3051D08928600C06180 /* ELRSSReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				A043A3061D08928600C06180 /* ELRSSReaderTests.m */,
+				A043A3081D08928600C06180 /* Info.plist */,
+			);
+			path = ELRSSReaderTests;
+			sourceTree = "<group>";
+		};
+		A043A3101D08928600C06180 /* ELRSSReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A043A3111D08928600C06180 /* ELRSSReaderUITests.m */,
+				A043A3131D08928600C06180 /* Info.plist */,
+			);
+			path = ELRSSReaderUITests;
+			sourceTree = "<group>";
+		};
+		A043A31F1D08A0D100C06180 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A043A3201D08A11900C06180 /* Model.xcdatamodeld */,
+				A043A35D1D098CEF00C06180 /* ELFeedItem+CoreDataProperties.h */,
+				A043A35E1D098CEF00C06180 /* ELFeedItem+CoreDataProperties.m */,
+				A043A35F1D098CEF00C06180 /* ELFeedItem.h */,
+				A043A3601D098CEF00C06180 /* ELFeedItem.m */,
+				A043A3611D098CEF00C06180 /* ELStreamItem+CoreDataProperties.h */,
+				A043A3621D098CEF00C06180 /* ELStreamItem+CoreDataProperties.m */,
+				A043A3631D098CEF00C06180 /* ELStreamItem.h */,
+				A043A3641D098CEF00C06180 /* ELStreamItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A043A3431D08E6CD00C06180 /* Prototype Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A043A3401D08E6C000C06180 /* ELStreamCell.h */,
+				A043A3411D08E6C000C06180 /* ELStreamCell.m */,
+				A043A3481D0983A900C06180 /* ELFeedCell.h */,
+				A043A3491D0983A900C06180 /* ELFeedCell.m */,
+			);
+			name = "Prototype Cells";
+			sourceTree = "<group>";
+		};
+		A043A3441D08E72100C06180 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A043A36C1D09CBB100C06180 /* ELStreamConfigureViewController.h */,
+				A043A36D1D09CBB100C06180 /* ELStreamConfigureViewController.m */,
+				A043A33D1D08E5B100C06180 /* ELStreamListViewController.h */,
+				A043A33E1D08E5B100C06180 /* ELStreamListViewController.m */,
+				A043A3451D08ED5F00C06180 /* ELFeedListViewController.h */,
+				A043A3461D08ED5F00C06180 /* ELFeedListViewController.m */,
+				A02EA98E1D0AE0880027F194 /* ELDetailFeedViewController.h */,
+				A02EA98F1D0AE0880027F194 /* ELDetailFeedViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A81ADCE8EDC15E39FD95253F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFCAA9F69196FFA87C484703 /* Pods-ELRSSReader.debug.xcconfig */,
+				ECEB7BE38DBD107BAD3E2A83 /* Pods-ELRSSReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2D999DB7711BF6F7EBEF85E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FA3B4AD3B7D32A4ED006843 /* Pods_ELRSSReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A043A2E81D08928500C06180 /* ELRSSReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A043A3161D08928600C06180 /* Build configuration list for PBXNativeTarget "ELRSSReader" */;
+			buildPhases = (
+				D323878956C576CE7A9C7005 /* [CP] Check Pods Manifest.lock */,
+				A043A2E51D08928500C06180 /* Sources */,
+				A043A2E61D08928500C06180 /* Frameworks */,
+				A043A2E71D08928500C06180 /* Resources */,
+				FF0544C6DB988AEB2E808789 /* [CP] Embed Pods Frameworks */,
+				908A361CCF617D762298A2CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ELRSSReader;
+			productName = ELRSSReader;
+			productReference = A043A2E91D08928500C06180 /* ELRSSReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A043A3011D08928600C06180 /* ELRSSReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A043A3191D08928600C06180 /* Build configuration list for PBXNativeTarget "ELRSSReaderTests" */;
+			buildPhases = (
+				A043A2FE1D08928600C06180 /* Sources */,
+				A043A2FF1D08928600C06180 /* Frameworks */,
+				A043A3001D08928600C06180 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A043A3041D08928600C06180 /* PBXTargetDependency */,
+			);
+			name = ELRSSReaderTests;
+			productName = ELRSSReaderTests;
+			productReference = A043A3021D08928600C06180 /* ELRSSReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A043A30C1D08928600C06180 /* ELRSSReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A043A31C1D08928600C06180 /* Build configuration list for PBXNativeTarget "ELRSSReaderUITests" */;
+			buildPhases = (
+				A043A3091D08928600C06180 /* Sources */,
+				A043A30A1D08928600C06180 /* Frameworks */,
+				A043A30B1D08928600C06180 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A043A30F1D08928600C06180 /* PBXTargetDependency */,
+			);
+			name = ELRSSReaderUITests;
+			productName = ELRSSReaderUITests;
+			productReference = A043A30D1D08928600C06180 /* ELRSSReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A043A2E11D08928500C06180 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EL;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Yevhenii Lytvynenko";
+				TargetAttributes = {
+					A043A2E81D08928500C06180 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A043A3011D08928600C06180 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A043A2E81D08928500C06180;
+					};
+					A043A30C1D08928600C06180 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A043A2E81D08928500C06180;
+					};
+				};
+			};
+			buildConfigurationList = A043A2E41D08928500C06180 /* Build configuration list for PBXProject "ELRSSReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A043A2E01D08928500C06180;
+			productRefGroup = A043A2EA1D08928500C06180 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A043A2E81D08928500C06180 /* ELRSSReader */,
+				A043A3011D08928600C06180 /* ELRSSReaderTests */,
+				A043A30C1D08928600C06180 /* ELRSSReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A043A2E71D08928500C06180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A043A2FC1D08928500C06180 /* LaunchScreen.storyboard in Resources */,
+				A043A2F91D08928500C06180 /* Assets.xcassets in Resources */,
+				A0136FAB1D0B411C00D18C0A /* apple.png in Resources */,
+				A043A2F71D08928500C06180 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A043A3001D08928600C06180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A043A30B1D08928600C06180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		908A361CCF617D762298A2CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELRSSReader/Pods-ELRSSReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D323878956C576CE7A9C7005 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF0544C6DB988AEB2E808789 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELRSSReader/Pods-ELRSSReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A043A2E51D08928500C06180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A043A33F1D08E5B100C06180 /* ELStreamListViewController.m in Sources */,
+				A043A3681D098CEF00C06180 /* ELStreamItem.m in Sources */,
+				A02EA9901D0AE0880027F194 /* ELDetailFeedViewController.m in Sources */,
+				A043A34A1D0983A900C06180 /* ELFeedCell.m in Sources */,
+				A043A2F11D08928500C06180 /* AppDelegate.m in Sources */,
+				A043A36E1D09CBB100C06180 /* ELStreamConfigureViewController.m in Sources */,
+				A043A3661D098CEF00C06180 /* ELFeedItem.m in Sources */,
+				A043A3651D098CEF00C06180 /* ELFeedItem+CoreDataProperties.m in Sources */,
+				A043A3421D08E6C000C06180 /* ELStreamCell.m in Sources */,
+				A043A3671D098CEF00C06180 /* ELStreamItem+CoreDataProperties.m in Sources */,
+				A043A2EE1D08928500C06180 /* main.m in Sources */,
+				A043A3221D08A11900C06180 /* Model.xcdatamodeld in Sources */,
+				A043A3471D08ED5F00C06180 /* ELFeedListViewController.m in Sources */,
+				A043A3371D08A53300C06180 /* ELServerManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A043A2FE1D08928600C06180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A043A3071D08928600C06180 /* ELRSSReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A043A3091D08928600C06180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A043A3121D08928600C06180 /* ELRSSReaderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A043A3041D08928600C06180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A043A2E81D08928500C06180 /* ELRSSReader */;
+			targetProxy = A043A3031D08928600C06180 /* PBXContainerItemProxy */;
+		};
+		A043A30F1D08928600C06180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A043A2E81D08928500C06180 /* ELRSSReader */;
+			targetProxy = A043A30E1D08928600C06180 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A043A2F51D08928500C06180 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A043A2F61D08928500C06180 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A043A2FA1D08928500C06180 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A043A2FB1D08928500C06180 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A043A3141D08928600C06180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A043A3151D08928600C06180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A043A3171D08928600C06180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFCAA9F69196FFA87C484703 /* Pods-ELRSSReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ELRSSReader/ELRSSReader-Prefix.pch";
+				INFOPLIST_FILE = ELRSSReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yevheniilytvynenko.ELRSSReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A043A3181D08928600C06180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECEB7BE38DBD107BAD3E2A83 /* Pods-ELRSSReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ELRSSReader/ELRSSReader-Prefix.pch";
+				INFOPLIST_FILE = ELRSSReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yevheniilytvynenko.ELRSSReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A043A31A1D08928600C06180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ELRSSReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yevheniilytvynenko.ELRSSReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELRSSReader.app/ELRSSReader";
+			};
+			name = Debug;
+		};
+		A043A31B1D08928600C06180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ELRSSReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yevheniilytvynenko.ELRSSReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELRSSReader.app/ELRSSReader";
+			};
+			name = Release;
+		};
+		A043A31D1D08928600C06180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ELRSSReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yevheniilytvynenko.ELRSSReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ELRSSReader;
+			};
+			name = Debug;
+		};
+		A043A31E1D08928600C06180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ELRSSReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yevheniilytvynenko.ELRSSReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ELRSSReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A043A2E41D08928500C06180 /* Build configuration list for PBXProject "ELRSSReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A043A3141D08928600C06180 /* Debug */,
+				A043A3151D08928600C06180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A043A3161D08928600C06180 /* Build configuration list for PBXNativeTarget "ELRSSReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A043A3171D08928600C06180 /* Debug */,
+				A043A3181D08928600C06180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A043A3191D08928600C06180 /* Build configuration list for PBXNativeTarget "ELRSSReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A043A31A1D08928600C06180 /* Debug */,
+				A043A31B1D08928600C06180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A043A31C1D08928600C06180 /* Build configuration list for PBXNativeTarget "ELRSSReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A043A31D1D08928600C06180 /* Debug */,
+				A043A31E1D08928600C06180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A043A3201D08A11900C06180 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A043A3211D08A11900C06180 /* Model.xcdatamodel */,
+			);
+			currentVersion = A043A3211D08A11900C06180 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A043A2E11D08928500C06180 /* Project object */;
+}
